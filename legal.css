@@ -1,0 +1,121 @@
+/* ======================================
+   LEGAL PAGES SHARED STYLES
+   ====================================== */
+
+.legal-page {
+    min-height: 100vh;
+    padding: 40px 0 80px;
+}
+
+.legal-page .back-link {
+    display: inline-block;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.1rem;
+    color: var(--neon-yellow);
+    text-decoration: none;
+    border: 2px solid var(--neon-yellow);
+    padding: 8px 20px;
+    margin-bottom: 40px;
+    transition: all 0.2s;
+}
+
+.legal-page .back-link:hover {
+    background: var(--hot-pink);
+    border-color: var(--hot-pink);
+    color: var(--white);
+    transform: rotate(-2deg);
+}
+
+.legal-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--paper);
+    color: var(--ink);
+    padding: 50px 40px;
+    position: relative;
+    box-shadow:
+        5px 5px 0 var(--hot-pink),
+        10px 10px 0 var(--neon-yellow);
+}
+
+.legal-content h1 {
+    font-family: 'Rubik Mono One', monospace;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    color: var(--hot-pink);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.legal-content h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.4rem;
+    color: var(--hot-pink);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.legal-content h3 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.1rem;
+    color: var(--ink);
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.legal-content p,
+.legal-content li {
+    font-family: 'Special Elite', monospace;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--ink);
+    margin-bottom: 10px;
+}
+
+.legal-content ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.legal-content a {
+    color: var(--hot-pink);
+    text-decoration: underline;
+}
+
+.stamp-legal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-family: 'Rubik Mono One', monospace;
+    font-size: 0.9rem;
+    color: var(--red, #ff1a1a);
+    border: 3px solid var(--red, #ff1a1a);
+    padding: 8px 15px;
+    transform: rotate(8deg);
+    opacity: 0.5;
+}
+
+.legal-date {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    opacity: 0.6;
+}
+
+.address-block {
+    background: rgba(0, 0, 0, 0.05);
+    padding: 15px 20px;
+    border-left: 4px solid var(--hot-pink);
+    margin: 15px 0;
+}
+
+.form-template {
+    background: rgba(0, 0, 0, 0.03);
+    border: 2px dashed rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .legal-content {
+        padding: 30px 20px;
+    }
+}

@@ -4,98 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DATENSCHUTZ - MÄNNERTRÄNEN.DE</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Special+Elite&family=Rubik+Mono+One&display=swap" rel="stylesheet">
-    <style>
-        .legal-page {
-            min-height: 100vh;
-            padding: 40px 0 80px;
-        }
-        .legal-page .back-link {
-            display: inline-block;
-            font-family: 'Permanent Marker', cursive;
-            font-size: 1.1rem;
-            color: var(--neon-yellow);
-            text-decoration: none;
-            border: 2px solid var(--neon-yellow);
-            padding: 8px 20px;
-            margin-bottom: 40px;
-            transition: all 0.2s;
-        }
-        .legal-page .back-link:hover {
-            background: var(--hot-pink);
-            border-color: var(--hot-pink);
-            color: var(--white);
-            transform: rotate(-2deg);
-        }
-        .legal-content {
-            max-width: 800px;
-            margin: 0 auto;
-            background: var(--paper);
-            color: var(--ink);
-            padding: 50px 40px;
-            position: relative;
-            box-shadow:
-                5px 5px 0 var(--hot-pink),
-                10px 10px 0 var(--neon-yellow);
-        }
-        .legal-content h1 {
-            font-family: 'Rubik Mono One', monospace;
-            font-size: clamp(1.8rem, 5vw, 3rem);
-            color: var(--hot-pink);
-            margin-bottom: 30px;
-            text-transform: uppercase;
-        }
-        .legal-content h2 {
-            font-family: 'Permanent Marker', cursive;
-            font-size: 1.4rem;
-            color: var(--hot-pink);
-            margin-top: 30px;
-            margin-bottom: 10px;
-        }
-        .legal-content h3 {
-            font-family: 'Permanent Marker', cursive;
-            font-size: 1.1rem;
-            color: var(--ink);
-            margin-top: 20px;
-            margin-bottom: 8px;
-        }
-        .legal-content p,
-        .legal-content li {
-            font-family: 'Special Elite', monospace;
-            font-size: 1rem;
-            line-height: 1.8;
-            color: var(--ink);
-            margin-bottom: 10px;
-        }
-        .legal-content ul {
-            margin-left: 20px;
-            margin-bottom: 15px;
-        }
-        .legal-content a {
-            color: var(--hot-pink);
-            text-decoration: underline;
-        }
-        .stamp-legal {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            font-family: 'Rubik Mono One', monospace;
-            font-size: 0.9rem;
-            color: var(--red);
-            border: 3px solid var(--red);
-            padding: 8px 15px;
-            transform: rotate(8deg);
-            opacity: 0.5;
-        }
-        @media (max-width: 768px) {
-            .legal-content {
-                padding: 30px 20px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="legal.css">
 </head>
 <body>
     <div class="legal-page">
@@ -287,22 +201,22 @@
                     Servern von Google findet dabei nicht statt.
                 </p>
 
-                <p style="margin-top: 40px; font-size: 0.9rem; opacity: 0.7;">
-                    Quelle: Angepasst auf Basis von e-recht24.de Mustertexten
-                </p>
+                <p class="legal-date">Stand: Februar 2026</p>
             </div>
         </div>
     </div>
 
     <footer class="punk-footer">
         <div class="container">
-            <p class="footer-logo">MÄNNERTRÄNEN.DE</p>
+            <p class="footer-logo">M&Auml;NNERTR&Auml;NEN.DE</p>
             <div class="footer-links">
                 <a href="index.html">Shop</a>
                 <a href="impressum.html">Impressum</a>
                 <a href="datenschutz.html">Datenschutz</a>
+                <a href="agb.html">AGB</a>
+                <a href="widerruf.html">Widerruf</a>
             </div>
-            <p class="footer-slogan">MADE WITH RAGE & SCHADENFREUDE</p>
+            <p class="footer-slogan">MADE WITH RAGE &amp; SCHADENFREUDE</p>
         </div>
     </footer>
 </body>

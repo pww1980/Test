@@ -3,13 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MÄNNERTRÄNEN.DE - Noch Warm</title>
+    <title>M&Auml;NNERTR&Auml;NEN.DE - Noch Warm | Tassen, Merch &amp; mehr</title>
+    <meta name="description" content="M&auml;nnertr&auml;nen - Noch Warm. Tassen, T-Shirts und Geschenke f&uuml;r alle, die keinen Bock auf Mitleid haben. Punk-Style Merch aus Berlin.">
+    <meta name="keywords" content="M&auml;nnertr&auml;nen, Tassen, Merch, Geschenk, Punk, Berlin, feminismus, lustige Tassen">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="M&Auml;NNERTR&Auml;NEN.DE - Noch Warm">
+    <meta property="og:description" content="Deine Tr&auml;nen. Unsere Tassen. Kein Mitleid. Punk-Style Merch aus Berlin.">
+    <meta property="og:url" content="https://maennertraenen.de">
+    <meta property="og:site_name" content="M&auml;nnertr&auml;nen.de">
+    <meta property="og:locale" content="de_DE">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="M&Auml;NNERTR&Auml;NEN.DE - Noch Warm">
+    <meta name="twitter:description" content="Deine Tr&auml;nen. Unsere Tassen. Kein Mitleid.">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="canonical" href="https://maennertraenen.de">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Special+Elite&family=Rubik+Mono+One&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- COOKIE BANNER -->
+    <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie-Hinweis">
+        <div class="cookie-inner">
+            <p class="cookie-text">
+                Wir nutzen Cookies &amp; &auml;hnliche Technologien. Essenzielle Cookies sind f&uuml;r den Betrieb der
+                Seite notwendig. Optionale Cookies helfen uns, die Seite zu verbessern.
+                <a href="datenschutz.html">Mehr erfahren</a>
+            </p>
+            <div class="cookie-buttons">
+                <button id="cookie-accept-all" class="cookie-btn cookie-btn-accept">ALLES KLAR!</button>
+                <button id="cookie-essentials" class="cookie-btn cookie-btn-essentials">NUR NOTWENDIGE</button>
+            </div>
+        </div>
+    </div>
+
     <!-- RIOT GRRRL ZINE-STYLE STICKERS scattered around -->
     <div class="sticker sticker-1" aria-hidden="true">SMASH</div>
     <div class="sticker sticker-2" aria-hidden="true">NO GODS NO MASTERS</div>
@@ -23,9 +56,9 @@
         <div class="hero-inner">
             <div class="tape tape-left" aria-hidden="true"></div>
             <div class="tape tape-right" aria-hidden="true"></div>
-            <h1 class="glitch" data-text="MÄNNERTRÄNEN">MÄNNERTRÄNEN</h1>
+            <h1 class="glitch" data-text="M&Auml;NNERTR&Auml;NEN">M&Auml;NNERTR&Auml;NEN</h1>
             <p class="tagline">- NOCH WARM -</p>
-            <p class="subtitle">Deine Tränen. Unsere Tassen. Kein Mitleid.</p>
+            <p class="subtitle">Deine Tr&auml;nen. Unsere Tassen. Kein Mitleid.</p>
             <a href="#produkte" class="cta-btn">JETZT HEULEN LASSEN &darr;</a>
         </div>
     </header>
@@ -34,8 +67,10 @@
     <nav class="punk-nav">
         <ul>
             <li><a href="#produkte">PRODUKTE</a></li>
-            <li><a href="#manifest">MANIFEST</a></li>
+            <li><a href="#story">STORY</a></li>
+            <li><a href="#versand">VERSAND</a></li>
             <li><a href="#reviews">REVIEWS</a></li>
+            <li><a href="#faq">FAQ</a></li>
             <li><a href="#kontakt">KONTAKT</a></li>
         </ul>
     </nav>
@@ -45,10 +80,10 @@
         <div class="container">
             <h2 class="section-title torn">UNSER MANIFEST</h2>
             <div class="zine-page">
-                <p class="handwritten">Wir glauben daran, dass jede Träne gesammelt,<br>
-                jeder Seufzer abgefüllt und jedes<br>
+                <p class="handwritten">Wir glauben daran, dass jede Tr&auml;ne gesammelt,<br>
+                jeder Seufzer abgef&uuml;llt und jedes<br>
                 Wehwehchen in Keramik verewigt werden sollte.</p>
-                <p class="typewriter">MÄNNERTRÄNEN.DE ist nicht nur ein Shop.<br>
+                <p class="typewriter">M&Auml;NNERTR&Auml;NEN.DE ist nicht nur ein Shop.<br>
                 Es ist eine BEWEGUNG.<br>
                 Es ist ein STATEMENT.<br>
                 Es ist die beste Tasse, die du je besessen hast.</p>
@@ -64,7 +99,7 @@
             <div class="product-grid">
 
                 <!-- Product 1 -->
-                <div class="product-card">
+                <div class="product-card" data-name="Die Klassikerin" data-price="14.99">
                     <div class="product-img-wrapper">
                         <div class="product-placeholder mug-1">
                             <span class="mug-icon">&#9749;</span>
@@ -73,13 +108,13 @@
                         <div class="sold-tape" aria-hidden="true">HOT!</div>
                     </div>
                     <h3>Die Klassikerin</h3>
-                    <p class="product-desc">"Männertränen - Noch Warm" - Die originale Tasse. Schwarz. Brutal. Ehrlich.</p>
+                    <p class="product-desc">&ldquo;M&auml;nnertr&auml;nen - Noch Warm&rdquo; - Die originale Tasse. Schwarz. Brutal. Ehrlich.</p>
                     <p class="price">14,99&euro;</p>
-                    <button class="buy-btn">IN DEN WARENKORB</button>
+                    <button class="buy-btn" type="button">IN DEN WARENKORB</button>
                 </div>
 
                 <!-- Product 2 -->
-                <div class="product-card">
+                <div class="product-card" data-name="Frisch Gepresst" data-price="14.99">
                     <div class="product-img-wrapper">
                         <div class="product-placeholder mug-2">
                             <span class="mug-icon">&#9749;</span>
@@ -87,13 +122,13 @@
                         </div>
                     </div>
                     <h3>Frisch Gepresst</h3>
-                    <p class="product-desc">"Männertränen - Frisch Gepresst" - Für den Morgenkaffee mit extra Schadenfreude.</p>
+                    <p class="product-desc">&ldquo;M&auml;nnertr&auml;nen - Frisch Gepresst&rdquo; - F&uuml;r den Morgenkaffee mit extra Schadenfreude.</p>
                     <p class="price">14,99&euro;</p>
-                    <button class="buy-btn">IN DEN WARENKORB</button>
+                    <button class="buy-btn" type="button">IN DEN WARENKORB</button>
                 </div>
 
                 <!-- Product 3 -->
-                <div class="product-card">
+                <div class="product-card" data-name="Nachschub XL" data-price="19.99">
                     <div class="product-img-wrapper">
                         <div class="product-placeholder mug-3">
                             <span class="mug-icon">&#9749;</span>
@@ -102,13 +137,13 @@
                         <div class="new-badge" aria-hidden="true">NEU!</div>
                     </div>
                     <h3>Nachschub</h3>
-                    <p class="product-desc">"Männertränen - Nachschub" - Wenn eine Tasse nicht reicht. XL Format.</p>
+                    <p class="product-desc">&ldquo;M&auml;nnertr&auml;nen - Nachschub&rdquo; - Wenn eine Tasse nicht reicht. XL Format.</p>
                     <p class="price">19,99&euro;</p>
-                    <button class="buy-btn">IN DEN WARENKORB</button>
+                    <button class="buy-btn" type="button">IN DEN WARENKORB</button>
                 </div>
 
                 <!-- Product 4 -->
-                <div class="product-card">
+                <div class="product-card" data-name="Das T-Shirt" data-price="24.99">
                     <div class="product-img-wrapper">
                         <div class="product-placeholder mug-4">
                             <span class="mug-icon">&#128085;</span>
@@ -116,13 +151,13 @@
                         </div>
                     </div>
                     <h3>Das T-Shirt</h3>
-                    <p class="product-desc">"Männertränen Sammlerin" - Schwarzes Shirt. Weißer Print. Zero Chill.</p>
+                    <p class="product-desc">&ldquo;M&auml;nnertr&auml;nen Sammlerin&rdquo; - Schwarzes Shirt. Wei&szlig;er Print. Zero Chill.</p>
                     <p class="price">24,99&euro;</p>
-                    <button class="buy-btn">IN DEN WARENKORB</button>
+                    <button class="buy-btn" type="button">IN DEN WARENKORB</button>
                 </div>
 
                 <!-- Product 5 -->
-                <div class="product-card">
+                <div class="product-card" data-name="Das Einmachglas" data-price="12.99">
                     <div class="product-img-wrapper">
                         <div class="product-placeholder mug-5">
                             <span class="mug-icon">&#127870;</span>
@@ -130,13 +165,13 @@
                         </div>
                     </div>
                     <h3>Das Einmachglas</h3>
-                    <p class="product-desc">"Männertränen - Vorratsglas" - Für die Langzeitlagerung. 500ml pures Gold.</p>
+                    <p class="product-desc">&ldquo;M&auml;nnertr&auml;nen - Vorratsglas&rdquo; - F&uuml;r die Langzeitlagerung. 500ml pures Gold.</p>
                     <p class="price">12,99&euro;</p>
-                    <button class="buy-btn">IN DEN WARENKORB</button>
+                    <button class="buy-btn" type="button">IN DEN WARENKORB</button>
                 </div>
 
                 <!-- Product 6 -->
-                <div class="product-card">
+                <div class="product-card" data-name="Das Geschenk-Set" data-price="39.99">
                     <div class="product-img-wrapper">
                         <div class="product-placeholder mug-6">
                             <span class="mug-icon">&#127873;</span>
@@ -145,11 +180,92 @@
                         <div class="sold-tape" aria-hidden="true">BESTSELLER</div>
                     </div>
                     <h3>Das Geschenk-Set</h3>
-                    <p class="product-desc">Tasse + Shirt + Sticker. Alles was du brauchst. Alles was er fürchtet.</p>
+                    <p class="product-desc">Tasse + Shirt + Sticker. Alles was du brauchst. Alles was er f&uuml;rchtet.</p>
                     <p class="price">39,99&euro;</p>
-                    <button class="buy-btn">IN DEN WARENKORB</button>
+                    <button class="buy-btn" type="button">IN DEN WARENKORB</button>
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+    <!-- &Uuml;BER UNS / BRAND STORY -->
+    <section id="story" class="story-section">
+        <div class="container">
+            <h2 class="section-title torn">&Uuml;BER UNS</h2>
+            <div class="story-grid">
+                <div class="story-card story-card-main">
+                    <h3>Wie alles begann</h3>
+                    <p>
+                        2024. Ein Abend in Berlin-Neuk&ouml;lln. Drei Freundinnen. Eine Flasche Wein.
+                        Und ein Satz, der alles ver&auml;nderte: <em>&ldquo;Stell dir vor, man k&ouml;nnte
+                        M&auml;nnertr&auml;nen in Flaschen f&uuml;llen.&rdquo;</em>
+                    </p>
+                    <p>
+                        Was als Witz begann, wurde zur Mission. Wir designen Produkte f&uuml;r Frauen,
+                        die wissen was sie wollen &mdash; und was sie definitiv nicht wollen: Langeweile
+                        auf dem Fr&uuml;hst&uuml;ckstisch.
+                    </p>
+                </div>
+                <div class="story-card">
+                    <h3>Unsere Werte</h3>
+                    <ul class="values-list">
+                        <li><strong>Handgemacht</strong> &mdash; Jeder Print wird in Berlin produziert</li>
+                        <li><strong>Nachhaltig</strong> &mdash; Bio-Baumwolle, recycelte Verpackung</li>
+                        <li><strong>Fair</strong> &mdash; Faire L&ouml;hne, kurze Lieferwege</li>
+                        <li><strong>Unversch&auml;mt</strong> &mdash; Humor ist, wenn frau trotzdem lacht</li>
+                    </ul>
+                </div>
+                <div class="story-card">
+                    <h3>F&uuml;r wen?</h3>
+                    <p>
+                        F&uuml;r dich. F&uuml;r deine beste Freundin. F&uuml;r die Kollegin, die immer
+                        den besten Spruch hat. F&uuml;r jede Frau, die morgens ihren Kaffee mit einem
+                        Grinsen trinkt. Und f&uuml;r jeden Mann, der es mit Humor nimmt.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VERSAND & ZAHLUNG -->
+    <section id="versand" class="shipping-section">
+        <div class="container">
+            <h2 class="section-title spray">VERSAND &amp; ZAHLUNG</h2>
+            <div class="shipping-grid">
+                <div class="shipping-card">
+                    <div class="shipping-icon">&#128666;</div>
+                    <h3>Lieferung</h3>
+                    <ul>
+                        <li>Deutschland: 2-4 Werktage</li>
+                        <li>EU: 5-10 Werktage</li>
+                        <li>Ab 30&euro; versandkostenfrei (DE)</li>
+                        <li>Sonst: 3,99&euro; (DE) / 9,99&euro; (EU)</li>
+                    </ul>
+                </div>
+                <div class="shipping-card">
+                    <div class="shipping-icon">&#128179;</div>
+                    <h3>Zahlungsarten</h3>
+                    <div class="payment-methods">
+                        <span class="payment-badge">PayPal</span>
+                        <span class="payment-badge">Klarna</span>
+                        <span class="payment-badge">Visa</span>
+                        <span class="payment-badge">Mastercard</span>
+                        <span class="payment-badge">Apple Pay</span>
+                        <span class="payment-badge">Google Pay</span>
+                    </div>
+                    <p class="payment-note">Klarna: Rechnung, Sofort&uuml;berweisung oder Ratenkauf</p>
+                </div>
+                <div class="shipping-card">
+                    <div class="shipping-icon">&#128260;</div>
+                    <h3>R&uuml;ckgabe</h3>
+                    <ul>
+                        <li>14 Tage Widerrufsrecht</li>
+                        <li>Kostenlose Retoure (DE)</li>
+                        <li>Geld-zur&uuml;ck-Garantie</li>
+                    </ul>
+                    <a href="widerruf.html" class="shipping-link">Zur Widerrufsbelehrung &rarr;</a>
+                </div>
             </div>
         </div>
     </section>
@@ -161,19 +277,56 @@
             <div class="reviews-grid">
                 <div class="review-card">
                     <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="review-text">"Mein Freund hat geweint als er die Tasse gesehen hat. Perfekt."</p>
+                    <p class="review-text">&ldquo;Mein Freund hat geweint als er die Tasse gesehen hat. Perfekt.&rdquo;</p>
                     <p class="review-author">- Lisa, 28, Berlin</p>
                 </div>
                 <div class="review-card">
                     <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="review-text">"Kaufe zum dritten Mal nach. Die Kollegen im Büro lieben es. Die Männer weniger."</p>
+                    <p class="review-text">&ldquo;Kaufe zum dritten Mal nach. Die Kollegen im B&uuml;ro lieben es. Die M&auml;nner weniger.&rdquo;</p>
                     <p class="review-author">- Sarah, 34, Hamburg</p>
                 </div>
                 <div class="review-card">
                     <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
-                    <p class="review-text">"Einen Stern Abzug weil meine Tasse nicht groß genug für alle Tränen ist."</p>
-                    <p class="review-author">- Mona, 31, München</p>
+                    <p class="review-text">&ldquo;Einen Stern Abzug weil meine Tasse nicht gro&szlig; genug f&uuml;r alle Tr&auml;nen ist.&rdquo;</p>
+                    <p class="review-author">- Mona, 31, M&uuml;nchen</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-title spray">FAQ</h2>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>Aus welchem Material sind die Tassen?</summary>
+                    <p>Hochwertige Keramik, 330ml Fassungsverm&ouml;gen (XL: 450ml). Der Print ist sp&uuml;lmaschinenfest und mikrowellengeeignet. Deine Tr&auml;nen bleiben also auch nach dem 100. Sp&uuml;lgang noch warm.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Sind die Tassen sp&uuml;lmaschinenfest?</summary>
+                    <p>Ja! Alle unsere Tassen sind sp&uuml;lmaschinengeeignet. Wir empfehlen trotzdem: Oberes Fach, nicht &uuml;ber 60&deg;C. Dann hast du l&auml;nger Freude daran.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Welche Gr&ouml;&szlig;en hat das T-Shirt?</summary>
+                    <p>XS bis 3XL. Unisex-Schnitt aus 100% Bio-Baumwolle (180g/m&sup2;). F&auml;llt normal aus. Im Zweifel eine Gr&ouml;&szlig;e gr&ouml;&szlig;er f&uuml;r den Oversized-Look.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Wie lange dauert die Lieferung?</summary>
+                    <p>Deutschland: 2-4 Werktage. EU: 5-10 Werktage. Wir versenden mit DHL GoGreen &mdash; klimaneutral. Tracking-Link kommt per E-Mail.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Kann ich zur&uuml;ckgeben?</summary>
+                    <p>Klar. 14 Tage Widerrufsrecht, kostenlose Retoure innerhalb Deutschlands. Einfach per E-Mail melden: widerruf@maennertraenen.de. Mehr Infos: <a href="widerruf.html">Widerrufsbelehrung</a>.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Habt ihr auch Gutscheine?</summary>
+                    <p>Kommt bald! Bis dahin: Einfach das Geschenk-Set nehmen. Da ist f&uuml;r jeden Anlass was dabei.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Wo wird produziert?</summary>
+                    <p>Alles in Berlin. Kurze Wege, faire L&ouml;hne, recycelte Verpackung. Punk ist, wenn die Lieferkette stimmt.</p>
+                </details>
             </div>
         </div>
     </section>
@@ -182,25 +335,72 @@
     <section id="kontakt" class="contact-section">
         <div class="container">
             <h2 class="section-title spray">MAILING LIST</h2>
-            <p class="contact-text">Trag dich ein. Krieg Bescheid. Kein Spam. Nur Tränen.</p>
-            <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Willkommen im Club der Tränensammlerinnen!');">
-                <input type="email" placeholder="deine@email.de" required>
+            <p class="contact-text">Trag dich ein. Krieg Bescheid. Kein Spam. Nur Tr&auml;nen.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Willkommen im Club der Tr&auml;nensammlerinnen!');">
+                <input type="email" placeholder="deine@email.de" required aria-label="E-Mail-Adresse">
                 <button type="submit" class="buy-btn">ABONNIEREN</button>
             </form>
+            <!-- SOCIAL MEDIA -->
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Instagram" title="Folge uns auf Instagram">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    <span>@maennertraenen</span>
+                </a>
+                <a href="#" class="social-link" aria-label="TikTok" title="Folge uns auf TikTok">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.88a8.21 8.21 0 0 0 4.76 1.52V6.96a4.85 4.85 0 0 1-1-.27z"/></svg>
+                    <span>@maennertraenen</span>
+                </a>
+                <a href="#" class="social-link" aria-label="Pinterest" title="Folge uns auf Pinterest">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                    <span>Pinterest</span>
+                </a>
+            </div>
         </div>
     </section>
+
+    <!-- SLIDE-OUT CART -->
+    <div id="cart-overlay" class="cart-overlay" aria-hidden="true"></div>
+    <aside id="cart-drawer" class="cart-drawer" aria-label="Warenkorb">
+        <div class="cart-header">
+            <h3>WARENKORB</h3>
+            <button id="cart-close" class="cart-close" type="button" aria-label="Warenkorb schlie&szlig;en">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="cart-empty">Noch leer. Zeit, das zu &auml;ndern.</p>
+        </div>
+        <div id="cart-footer" class="cart-footer" style="display:none;">
+            <div class="cart-total">
+                <span>GESAMT:</span>
+                <span id="cart-total-price">0,00&euro;</span>
+            </div>
+            <button id="cart-checkout" class="buy-btn cart-checkout-btn" type="button">ZUR KASSE</button>
+            <p class="cart-legal-note">Versandkosten werden an der Kasse berechnet.</p>
+        </div>
+    </aside>
 
     <!-- FOOTER -->
     <footer class="punk-footer">
         <div class="container">
-            <p class="footer-logo">MÄNNERTRÄNEN.DE</p>
+            <p class="footer-logo">M&Auml;NNERTR&Auml;NEN.DE</p>
             <p class="footer-copy">&copy; 2026 - Kein Copyright. Kopier was du willst. Punk ist frei.</p>
             <div class="footer-links">
                 <a href="impressum.html">Impressum</a>
                 <a href="datenschutz.html">Datenschutz</a>
-                <a href="#">AGB</a>
+                <a href="agb.html">AGB</a>
+                <a href="widerruf.html">Widerruf</a>
             </div>
-            <p class="footer-slogan">MADE WITH RAGE & SCHADENFREUDE</p>
+            <div class="social-links social-links-footer">
+                <a href="#" aria-label="Instagram">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+                <a href="#" aria-label="TikTok">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.88a8.21 8.21 0 0 0 4.76 1.52V6.96a4.85 4.85 0 0 1-1-.27z"/></svg>
+                </a>
+                <a href="#" aria-label="Pinterest">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                </a>
+            </div>
+            <p class="footer-slogan">MADE WITH RAGE &amp; SCHADENFREUDE</p>
         </div>
     </footer>
 
