@@ -115,7 +115,49 @@
 }
 
 @media (max-width: 768px) {
+    .legal-page {
+        padding: 25px 0 60px;
+    }
+
+    .legal-page .back-link {
+        font-size: 0.95rem;
+        padding: 6px 15px;
+        margin-bottom: 25px;
+    }
+
     .legal-content {
-        padding: 30px 20px;
+        padding: 25px 18px;
+        box-shadow:
+            3px 3px 0 var(--hot-pink),
+            6px 6px 0 var(--neon-yellow);
+    }
+
+    .legal-content h1 {
+        font-size: clamp(1.4rem, 5vw, 2.2rem);
+        margin-bottom: 20px;
+    }
+
+    .legal-content h2 {
+        font-size: 1.2rem;
+        margin-top: 25px;
+    }
+
+    .legal-content p,
+    .legal-content li {
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+
+    .stamp-legal {
+        font-size: 0.7rem;
+        padding: 5px 10px;
+    }
+
+    .form-template {
+        padding: 15px;
+    }
+
+    .address-block {
+        padding: 12px 15px;
     }
 }

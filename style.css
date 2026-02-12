@@ -1307,63 +1307,344 @@ body {
     color: var(--white);
 }
 
+/* --- MOBILE NAV HAMBURGER --- */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: var(--white);
+    margin: 5px 0;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.nav-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+.nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+}
+
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
+    /* Hero */
+    .hero {
+        min-height: 85vh;
+    }
+
     .hero-inner {
-        padding: 20px;
+        padding: 20px 15px;
+    }
+
+    .glitch {
+        font-size: clamp(2rem, 12vw, 4rem);
+        word-break: break-word;
+    }
+
+    .tagline {
+        font-size: clamp(1.2rem, 4vw, 1.8rem);
+        letter-spacing: 3px;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        margin-bottom: 25px;
+    }
+
+    .cta-btn {
+        font-size: 1.1rem;
+        padding: 12px 25px;
     }
 
     .tape {
         display: none;
     }
 
+    /* Nav - Hamburger */
+    .nav-toggle {
+        display: block;
+    }
+
+    .punk-nav {
+        padding: 10px 0;
+    }
+
+    .punk-nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        padding: 10px 0 5px;
+    }
+
+    .punk-nav ul.open {
+        display: flex;
+    }
+
+    .punk-nav a {
+        font-size: 1rem;
+        padding: 8px 20px;
+        letter-spacing: 2px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Sections - reduce padding */
+    .manifest-section,
+    .products-section,
+    .story-section,
+    .shipping-section,
+    .reviews-section,
+    .faq-section {
+        padding: 60px 0;
+    }
+
+    .contact-section {
+        padding: 50px 0;
+    }
+
+    .section-title {
+        font-size: clamp(1.5rem, 6vw, 2.5rem);
+        margin-bottom: 30px;
+    }
+
+    /* Manifest */
     .zine-page {
         transform: rotate(0deg);
-        padding: 30px 20px;
+        padding: 25px 18px;
     }
 
+    .handwritten {
+        font-size: 1.15rem;
+        line-height: 1.6;
+    }
+
+    .typewriter {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .stamp {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    /* Products */
     .product-grid {
         grid-template-columns: 1fr;
+        gap: 25px;
     }
 
+    .product-card {
+        padding: 18px;
+        transform: rotate(0deg) !important;
+    }
+
+    .product-placeholder {
+        height: 180px;
+    }
+
+    .price {
+        font-size: 1.4rem;
+    }
+
+    .buy-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    /* Story */
     .story-grid {
         grid-template-columns: 1fr;
     }
 
     .story-card-main {
         grid-column: 1;
+        transform: rotate(0deg);
     }
 
+    .story-card {
+        padding: 25px 20px;
+        transform: rotate(0deg) !important;
+    }
+
+    .story-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .story-card p {
+        font-size: 0.95rem;
+    }
+
+    /* Shipping */
     .shipping-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
+    .shipping-card {
+        padding: 25px 20px;
+    }
+
+    .payment-methods {
+        gap: 6px;
+    }
+
+    .payment-badge {
+        font-size: 0.8rem;
+        padding: 5px 8px;
+    }
+
+    /* Reviews */
     .reviews-grid {
         grid-template-columns: 1fr;
     }
 
-    .punk-nav ul {
+    .review-card {
+        padding: 25px 20px;
+        transform: rotate(0deg) !important;
+    }
+
+    /* FAQ */
+    .faq-item summary {
+        font-size: 1rem;
+        padding: 14px 18px;
+    }
+
+    .faq-item p {
+        padding: 0 18px 15px;
+        font-size: 0.9rem;
+    }
+
+    /* Contact / Newsletter */
+    .contact-text {
+        font-size: 1.1rem;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .newsletter-form input[type="email"] {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .newsletter-form .buy-btn {
+        width: 100%;
+    }
+
+    /* Social */
+    .social-links {
+        flex-direction: column;
+        align-items: center;
         gap: 10px;
     }
 
-    .punk-nav a {
+    .social-link {
         font-size: 0.9rem;
-        padding: 5px 10px;
+        padding: 6px 10px;
+    }
+
+    /* Cookie Banner */
+    .cookie-banner {
+        padding: 15px;
     }
 
     .cookie-inner {
         flex-direction: column;
         text-align: center;
+        gap: 12px;
+    }
+
+    .cookie-text {
+        min-width: 0;
+        font-size: 0.85rem;
     }
 
     .cookie-buttons {
         width: 100%;
         justify-content: center;
+        flex-direction: column;
+        gap: 8px;
     }
 
+    .cookie-btn {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 0.85rem;
+    }
+
+    /* Cart */
     .cart-drawer {
         width: 100%;
         max-width: 100vw;
         right: -100%;
+    }
+
+    /* Footer */
+    .footer-logo {
+        font-size: 1.4rem;
+        letter-spacing: 3px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .footer-links a {
+        font-size: 1rem;
+    }
+
+    .footer-slogan {
+        font-size: 0.9rem;
+        letter-spacing: 3px;
+    }
+}
+
+/* Extra small devices (under 380px) */
+@media (max-width: 380px) {
+    .glitch {
+        font-size: 2rem;
+    }
+
+    .tagline {
+        letter-spacing: 2px;
+        font-size: 1.1rem;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .product-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .price {
+        font-size: 1.2rem;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
     }
 }

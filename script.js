@@ -30,6 +30,27 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // --- MOBILE NAV HAMBURGER ---
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            const isOpen = navMenu.classList.toggle('open');
+            navToggle.classList.toggle('active');
+            navToggle.setAttribute('aria-expanded', isOpen);
+        });
+
+        // Close menu when a link is clicked
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('open');
+                navToggle.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
+
     // --- RANDOM ROTATION on product cards ---
     document.querySelectorAll('.product-card').forEach(card => {
         const rot = (Math.random() - 0.5) * 4;
